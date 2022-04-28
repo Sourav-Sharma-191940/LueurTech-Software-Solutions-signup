@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Validated Login Form</title>
+	<link rel="stylesheet" href="style.css">
+</head>
+<body>
+	<div class="container">
+		<h1 class="label">WELCOME!</h1>
+		<form class="login_form" action="home.html" method="post" name="form" onsubmit="return validated()">
+			<div class="font">First Name*</div>
+			<input autocomplete="off" type="text" name="fname">
+			<div id="fname_error">First Name should be of atleast 3 letter</div>
+			<div class="font font2">Last Name</div>
+			<input autocomplete="off" type="text" name="lname">
+			<div id="lname_error">Last Name should be of atleast 3 letter</div>
+			<div class="font font2">Email*</div>
+			<input autocomplete="off" type="text" name="email">
+			<div id="email_error">Please fill up your Email</div>
+			<div class="font font2">Phone Number*</div>
+			<input autocomplete="off" type="number" name="pnumber">
+			<div id="pnumber_error">Please fill up your Phone</div>
+			<div class="font font2">Password*</div>
+			<input type="password" name="password">
+			<div id="pass_error">Password should of atleast 6 digit</div>
+			
+			<button type="submit">Sign Up</button>
+		</form>
+	</div>	
+	<script src="valid.js"></script>
+</body>
+</html>
